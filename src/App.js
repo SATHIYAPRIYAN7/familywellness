@@ -1,27 +1,29 @@
 
 import React from "react";
-import Profile from "./components/Profile";
-import Work from "./components/Work";
-import Skills from "./components/Skills";
-import Icon from "./components/Icon";
+import Profile from "./Profile.js";
+import About from "./About.js";
+import "./App.css"
+
 
 
 
 function App() {
 
   const style1={
-    backgroundColor:"white",
-    maxWidth:"800px",
-    margin:"auto",
-    minHeight:"100vh"
+  //  backgroundColor: "rgb(15, 205, 248)",
+    
+
   }
+ 
   
   return (
-    <div className="App"  style={style1}>
-      <Profile />
-      <Work />
-      <Skills />
-      <Icon />
+    <div style={style1} className="App-div">
+
+      <div class="w-4/5 m-auto mt-14 flex justify-between" >
+        <Profile />
+      <About />
+      
+      </div>
     </div>
   );
 }
